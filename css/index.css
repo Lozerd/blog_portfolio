@@ -1,0 +1,99 @@
+* {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
+}
+
+/* Навигационная панель в */
+.nav__ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 0 27px;
+}
+
+.nav__li {
+  list-style: none;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.nav__li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #000;
+  transition: 0.4s;
+}
+
+.nav__li a:hover::after {
+  width: 100%;
+}
+
+/* Контент сайта */
+.content {
+  padding: 55px;
+}
+
+.content--header {
+  display: flex;
+  margin-bottom: 200px;
+}
+
+.content--title {
+  position: relative;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 69px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 79px;
+  letter-spacing: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.content--title p {
+  position: absolute;
+  width: 773px;
+}
+
+/* Блок проектов */
+.content--projects {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.projects--title {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.horizontal--row {
+
+}
+
+.horizontal--row {
+
+}
