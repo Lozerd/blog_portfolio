@@ -1,6 +1,12 @@
 * {
   text-decoration: none;
   color: black;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 body {
@@ -15,7 +21,7 @@ body {
   padding: 2% 5%;
 }
 
-/* Навигационная панель в */
+/* Header nav */
 .nav__ul {
   display: flex;
   flex-flow: row wrap;
@@ -47,40 +53,14 @@ body {
   width: 100%;
 }
 
-/* Контент сайта */
+/* Content */
 .content {
+  max-width: 1300px;
+  margin: 0 auto;
   padding: 55px;
 }
 
-.content--header {
-  display: flex;
-  margin-bottom: 200px;
-}
-
 .content--title {
-  position: relative;
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  font-size: 69px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 79px;
-  letter-spacing: 0;
-  text-align: left;
-  width: 100%;
-}
-
-.content--title p {
-  position: absolute;
-  width: 773px;
-}
-
-/* Блок проектов */
-.content--projects {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.projects--title {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   font-size: 45px;
   font-style: normal;
@@ -90,10 +70,297 @@ body {
   text-align: left;
 }
 
-.horizontal--row {
-
+.content--header {
+  display: flex;
+  margin-bottom: 220px;
 }
 
-.horizontal--row {
+.content--description {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 69px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 79px;
+  letter-spacing: 0;
+  text-align: left;
+  position: relative;
+  width: 100%;
+}
 
+.content--description p {
+  position: absolute;
+  max-width: 773px;
+  width: max-content;
+}
+
+/* Projects */
+.content--projects {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 200px;
+  max-width: 1284px;
+}
+
+.hr {
+  padding: 0 0 27px;
+  border-bottom: black 1.5px solid;
+  margin-bottom: 96px;
+}
+
+.hero--items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects__hero--item {
+  min-width: 370px;
+}
+
+.hero--title {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+/* Content Creation */
+.content--creation {
+  margin-bottom: 200px;
+}
+
+.creation--description p {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 75px;
+  max-width: 600px;
+}
+
+.creation--contact {
+  text-decoration: underline;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.creation--video {
+  width: max-content;
+  border-radius: 5px;
+}
+
+.creation--video iframe {
+  border-radius: inherit;
+  width: 600px;
+  height: 376px;
+  object-fit: fill;
+}
+
+/* About Me */
+.about__hero--items {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 103px;
+  margin-bottom: 200px;
+}
+
+.about__hero--item:first-child {
+  max-width: 535px;
+}
+
+.about__hero--description {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.about__hero--title {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.about__li--title {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0;
+  text-align: left;
+  border-bottom: 2px solid #000;
+}
+
+.about__li--title span {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.about__li--title::after {
+  content: url("../svg/up-arrow.svg");
+  float: right;
+  margin: auto 20px auto 0;
+}
+
+.about__li--description {
+  width: 87%;
+  margin: 19px auto;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+/* What Clients Say */
+.clients--slider {
+  max-width: 1100px;
+  margin: 0 auto 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.client--item {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 41px;
+}
+
+.clients_button--left {
+  float: left;
+}
+
+.client--text {
+  padding: 0 77px;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.client--name {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+}
+
+.client--name::before {
+  content: url("../svg/dash.svg");
+  position: absolute;
+  top: -15%;
+  left: -15%;
+}
+
+.client--name span {
+  font-style: italic;
+}
+
+.clients_button--right {
+  float: right;
+}
+
+.clients_button--left, .clients_button--right {
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+
+/* Say Hello */
+.hello--items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+}
+
+.hello--description {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 44px 0;
+  padding-top: 29px;
+  max-width: 530px;
+}
+
+.hello--form__wrapper {
+  min-width: 545px;
+}
+
+.hello--form {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 22px 0;
+}
+
+.field__group {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.hello--form__field {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.fields {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.hello--form__field input, select {
+  color: grey;
+  width: 256px;
+  border: 2px solid #4E4E4E;
+  padding: 7px 5px;
+  box-sizing: border-box;
+}
+
+.hello--form__field option {
+  color: black;
+}
+
+.hello--form--span {
+  display: block;
+  /*width: 100%;*/
+}
+
+.hello--form--span::after {
+  content: " *";
 }
